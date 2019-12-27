@@ -27,7 +27,7 @@ class Student(models.Model):
     crated_time = models.DateTimeField(auto_now_add=True, editable=False, verbose_name='创建时间')
 
     def __str__(self):
-        return '<Student: {}>'.format(self.name)
+        return '<Student: {}>'.format(self.name, self.sex)
 
     class Meta:
         verbose_name = verbose_name_plural = '学员信息'
